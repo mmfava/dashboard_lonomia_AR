@@ -1,0 +1,23 @@
+---
+title: "Untitled"
+author: "Marília Melo Favalesso"
+date: "10/02/2022"
+output: html_document
+---
+
+# Creditos
+
+## Artículo científico
+
+> Casafús MG, Favalesso MM, Gritti MA, Coronel JM, Guimarães ATB & Peichoto ME. A hidden deadly venomous insect: first eco-epidemiological assessment and risk mapping of lonomism in Argentina. PLoS Negl Trop Dis 15(7): e0009542. DOI: [10.1371/journal.pntd.0009542](https://doi.org/10.1371/journal.pntd.0009542).
+
+
+## Site
+
+- **Concepción**: [Marília Melo Favalesso](https://www.mmfava.com/) & Maria Elisa Peichoto
+
+- **Desarrollo:** [Marília Melo Favalesso](https://www.mmfava.com/) & Maria Elisa Peichoto
+
+- **Agradecimientos:** Milensa Casafús & Micaela Gritti
+
+<small>Versión: 2022-02-10</small>
