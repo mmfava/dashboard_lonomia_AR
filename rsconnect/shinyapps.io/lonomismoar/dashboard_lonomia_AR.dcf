@@ -1,0 +1,13 @@
+name: dashboard_lonomia_AR
+title: dashboard_lonomia_AR
+username:
+account: lonomismoar
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 5666276
+bundleId: 5585262
+url: https://lonomismoar.shinyapps.io/dashboard_lonomia_AR/
+when: 1645016551.77771
+lastSyncTime: 1645016551.77771
+asMultiple: FALSE
+asStatic: FALSE

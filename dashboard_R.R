@@ -71,7 +71,7 @@ area$label <- paste0(area$perc, "%") # Texto de la etiqueta
 
 grapharea <- ggplot(area, aes(x = reorder(Category, desc(perc)), y = perc, fill = Category)) +
   geom_bar(stat = "identity") +
-  scale_fill_manual(values = c("#fbc4ab", "grey80", "#fbc4ab", "#fbc4ab")) +
+  scale_fill_manual(values = c("grey80", "#fbc4ab", "#fbc4ab", "#fbc4ab")) +
   theme_bw(base_size = 16) +
   ylim(c(0, 50)) +
   theme(legend.position = "none", 
@@ -195,10 +195,11 @@ sp$`Porcentaje (%)` <- color_bar("#fbc4ab")(sp$`Porcentaje (%)`) # Gráfico de b
 
 tabsp <- kbl(sp, escape = F, align = "l") %>%
   kable_styling(bootstrap_options = c("striped", "hover")) %>%
-  column_spec(1, width = "4cm", italic = T) %>%
-  column_spec(2, width = "2cm") %>%
-  column_spec(3, width = "1.5cm") %>%
-  column_spec(4, width = "1cm", color = "black", bold = T) %>%
+  column_spec(1, width = "5cm", italic = T) %>%
+  column_spec(2, width = "5cm") %>%
+  column_spec(3, width = "5cm") %>%
+  column_spec(4, width = "5cm", color = "black", bold = T) %>%
+  column_spec(5, width = "5cm", color = "black", bold = T) %>%
   footnote(c("*Al menos un caso de lonomismo registrado"), escape = F, 
            symbol_manual = NULL, footnote_as_chunk	= F,
            fixed_small_size	= T, general_title = "")
@@ -236,31 +237,31 @@ grames <- ggplot(mes, aes(x = Mes, y = Cantidad, fill = `Etapa de vida:`)) +
   scale_fill_manual(values = c("#b29457", "#436a36", "#2b4625")) +
   theme_bw(base_size = 16) +
   annotate(geom = "text", x = 1, y = 8.5, label = labmes[1],
-           color = "black") +
+           color = "black", size = 6) +
   annotate(geom = "text", x = 2, y = 3.5, label = labmes[2],
-           color = "black") +
+           color = "black", size = 6) +
   annotate(geom = "text", x = 3, y = 2.5, label = labmes[3],
-           color = "black") +
+           color = "black", size = 6) +
   annotate(geom = "text", x = 4, y = 12.5, label = labmes[4],
-           color = "black")+
+           color = "black", size = 6)+
   annotate(geom = "text", x = 5, y = 8.5, label = labmes[5],
-           color = "black")+
+           color = "black", size = 6)+
   annotate(geom = "text", x = 6, y = 0.5, label = labmes[6],
-           color = "black")+
+           color = "black", size = 6)+
   annotate(geom = "text", x = 7, y = 0.5, label = labmes[7],
-           color = "black")+
+           color = "black", size = 6)+
   annotate(geom = "text", x = 8, y = 0.5, label = labmes[8],
-           color = "black")+
+           color = "black", size = 6)+
   annotate(geom = "text", x = 9, y = 4.5, label = labmes[9],
-           color = "black")+
+           color = "black", size = 6)+
   annotate(geom = "text", x = 10, y = 10.5, label = labmes[10],
-           color = "black")+
+           color = "black", size = 6)+
   annotate(geom = "text", x = 11, y = 8.5, label = labmes[11],
-           color = "black")+
+           color = "black", size = 6)+
   annotate(geom = "text", x = 12, y = 15.5, label = labmes[12],
-           color = "black")+
+           color = "black", size = 6)+
   annotate(geom = "text", x = 13, y = 3.5, label = labmes[13],
-           color = "black") +
+           color = "black", size = 6) +
   theme(
     panel.background = element_rect(fill = "#ECF0F5"), # bg of the panel
     plot.background = element_rect(fill = "#ECF0F5", color = NA), # bg of the plot
@@ -299,19 +300,19 @@ body <- dashboardBody(
                          p("La mayoría de los accidentes reportados fueron con hombres."), 
                          plotOutput("graphsex"), height = 500),
                      box(h3("Edad"),
-                         p("La mayoría de los accidentes ocurren con jóvenes (menor o igual a 20 años)."),
+                         p("La mayoría de los accidentes fueron con jóvenes (menor o igual a 20 años)."),
                          plotOutput("graphedad"), height = 500), 
                      box(h3("Zona donde ocurrió el accidente"),
-                         p("Los accidentes ocurren en áreas periurbanas, rurales y boscosas."),
+                         p("Los accidentes reportados ocurrieron en zonas periurbanas, rurales y selváticas."),
                          plotOutput("grapharea"), height = 500),
                      box(h3("Hora del día"),
-                         p("Los accidentes ocurren durante el día."),
+                         p("Los accidentes reportados ocurrieron durante el día."),
                          plotOutput("graphhora"), height = 500), 
                      box(h3("Circunstancias del accidente"),
-                         p("Los accidentes ocurren durante las actividades recreativas o el trabajo en áreas abiertas."),
+                         p("Los accidentes reportados ocurrieron durante actividades recreativas o trabajo en áreas abiertas."),
                          plotOutput("graphcircunstancias"), height = 500),
                      box(h3("Parte del cuerpo afectada"),
-                         p("Los dedos, las manos y el brazo son las extremidades principales que tocan las orugas."),
+                         p("El contacto con las orugas ocurrió principalmente en los dedos, manos y brazos."),
                        plotOutput("graphcuerpo"), height = 500))),
     
     
@@ -324,7 +325,7 @@ body <- dashboardBody(
     
     tabItem(tabName = "estacionalidad", 
             h2("Estacionalidad"),
-            p("Las ocurrencias acumuladas de Lonomia spp. 
+            p("Las ocurrencias acumuladas 
               en los meses del periodo de estudio (enero 2014 a mayo 2020)."),
             fluidRow(plotOutput("grames", width = "95%", height = "500px"))),
     

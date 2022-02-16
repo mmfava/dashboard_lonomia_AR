@@ -18,6 +18,6 @@ output: html_document
 
 - **Desarrollo:** [Marília Melo Favalesso](https://www.mmfava.com/) & Maria Elisa Peichoto
 
-- **Agradecimientos:** Milensa Casafús & Micaela Gritti
+- **Agradecimientos:** Milena Casafús & Micaela Gritti
 
 <small>Versión: 2022-02-10</small>

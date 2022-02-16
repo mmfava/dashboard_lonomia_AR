@@ -1,0 +1,13 @@
+name: plosone
+title: plosone
+username:
+account: lonomismoar
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 5666298
+bundleId: 5585291
+url: https://lonomismoar.shinyapps.io/plosone/
+when: 1645017001.69957
+lastSyncTime: 1645017001.69957
+asMultiple: FALSE
+asStatic: FALSE
