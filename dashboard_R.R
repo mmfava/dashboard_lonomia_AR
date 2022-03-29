@@ -18,6 +18,8 @@ library(kableExtra)
 library(readxl)
 library(formattable)
 library(rgdal)
+library(zoo)
+library(htmlwidgets)
 
 ## Datos -----------------------------------------------------------------------
 tabepid <- read_excel("www/tabepid.xlsx", sheet = "Plan1")
@@ -320,7 +322,9 @@ body <- dashboardBody(
             h2("Plantas hospedantes"),
             h3("Plantas hospederas para larvas de Lonomia en Misiones, 
                Argentina."),
-            box(tableOutput("tabsp"), width="300px",  height = "100%")),
+            h4(a("Haga clic aquí para acceder a las fotos de las plantas hospedantes.", 
+              href = "https://drive.google.com/drive/folders/1pWLC8R1U0T6Qo0Wiu-R14m85mRL83kwQ?usp=sharing")),
+            fluidRow(box(tableOutput("tabsp"), width="300px",  height = "100%"))),
     
     
     tabItem(tabName = "estacionalidad", 

@@ -5,9 +5,9 @@ account: mmfavalesso
 server: shinyapps.io
 hostUrl: https://api.shinyapps.io/v1
 appId: 5630050
-bundleId: 5585301
+bundleId: 5585748
 url: https://mmfavalesso.shinyapps.io/lonomismoar/
-when: 1645017170.64934
-lastSyncTime: 1645017170.64934
+when: 1645023000.13275
+lastSyncTime: 1645023000.13275
 asMultiple: FALSE
 asStatic: FALSE

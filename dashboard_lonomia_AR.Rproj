@@ -11,3 +11,7 @@ Encoding: UTF-8
 
 RnwWeave: Sweave
 LaTeX: pdfLaTeX
+
+PythonType: system
+PythonVersion: 3.9.12
+PythonPath: C:\Users\mmfav\AppData\Local\Microsoft\WindowsApps/python3.9.exe
