@@ -1,7 +1,7 @@
 
 # Aplicación Shiny: Evaluación Eco-epidemiológica y Mapeo de Riesgo de Lonomismo en Misiones, Argentina
 
-![](image.png)
+[![](image.png)](https://mmfavalesso.shinyapps.io/lonomismoar/)
 
 ## Descripción
 
